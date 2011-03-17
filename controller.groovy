@@ -1,0 +1,1 @@
+return [date:new Date()]
