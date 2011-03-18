@@ -3,19 +3,28 @@
 		<title>itsy-mvc</title>
 	</head>
 	<body>
-		Congratulations! It's $date and you've succesfully started itsy-mvc!
-
+		Congratulations, you've succesfully started itsy-mvc!
 		
-		<ul>
-	
-		<li>Host: $Host</li>
-		<li>Connection: $Connection</li>
-		<li>Cache-Control: $CacheControl</li>
-		<li>Accept: $Accept</li>
-		<li>User-Agent: $UserAgent</li>
-		<li>Accept-Encoding: $AcceptEncoding</li>
-		<li>Accept-Language: $AcceptLanguage</li>
-		<li>Accept-Charset: $AcceptCharset</li>
+		<ul><b>date</b>(from controller)
+		<li>$date</li>
+		</ul>
+
+		<ul><b>resources</b>
+		<% resources.each{ resource -> %>
+		<li>$resource</li>
+		<% } %>
+		</ul>
+
+		<ul><b>params</b>
+		<% params.each{ name, value -> %>
+		<li>$name: $value</li>
+		<% } %>
+		</ul>
+
+		<ul><b>headers</b>
+		<% headers.each{ name, value -> %>
+		<li>$name: $value</li>
+		<% } %>
 		</ul>
 		
 	</body>
