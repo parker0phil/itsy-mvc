@@ -32,3 +32,11 @@ Static Resources
 
 Static resources are not currently served. If you want external css, js, img etc you'll have to load them from an external location.
 This might get added if I can do it in less than 3 lines!
+
+
+Standing on the Shoulders of Giants
+===================================
+http://mresetar.blogspot.com/2010/04/http-server-with-logging-in-20-lines-of.html
+http://markmail.org/message/vx4oncrxvmzv4zib
+
+
